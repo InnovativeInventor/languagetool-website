@@ -5,7 +5,7 @@
     function getDefaultDemoTexts() {
         // TODO: some of these texts were manually copied from Transifex (key: guiDemoText) - we need a better process for that:
         $map['ast'] = "Apega testu equí. o revisa toes les pallabres de esti testu pa ver dalgún de los problemis que LanguageTool ye pa deteutar. ¿Afáyeste con los correutores gramaticales? Has date cuenta de que entá nun son perfeutos.";
-        $map['en'] = "welcome to LanguageTool Online! Paste your own text here and clicks the 'Check Text' button. Click the colored phrases for details on potential errors. If you are on iOS, press two fingers to each colored word. LanguageTool 3.8 was released on Thursday, 27th June 2017.";
+        $map['en'] = "welcome to LanguageTool Online! Paste your own text here and click the 'Check Text' button. Click the colored phrases for details on potential errors. If you are on iOS, press two fingers to each colored word. LanguageTool 3.8 was released on Thursday, 27th June 2017.";
         $map['br'] = "Lakait amañ ho testenn vrezhonek da vezañ gwiriet. Pe implijit an frazenn-mañ gant meur a fazioù yezhadurel.";
         $map['ca'] = "Introduïu açí el vostre text. o feu servir aquest texts com a a exemple per a alguns errades que LanguageTool hi pot detectat.";
         $map['zh'] = "将文本粘贴在此，或者检测以下文本：我和她去看了二部电影。";
