@@ -1,4 +1,5 @@
 <?php
+// Modified by InnovativeInventor to create a web app
   error_reporting(E_ALL);
 
   $page = "App";

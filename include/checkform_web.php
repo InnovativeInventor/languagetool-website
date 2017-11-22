@@ -1,5 +1,5 @@
 <?php
-
+// Modified by InnovativeInventor to create a web app
 if (!isset($checkLanguage)) {
     $checkLanguage = array(
         'auto' => 'Auto-detect',

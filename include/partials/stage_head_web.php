@@ -1,5 +1,5 @@
 <?php include("banner.php"); ?>
-
+// Modified by InnovativeInventor to create a web app
 <div id="stage" class="start">
   <div class="inner">
     <div id="text">

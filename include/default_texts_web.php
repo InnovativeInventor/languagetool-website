@@ -1,4 +1,7 @@
 <?php
+// Modified by InnovativeInventor to create a web app
+// Some work still needs to be done translating 
+
     function getDefaultDemoTexts() {
         // TODO: some of these texts were manually copied from Transifex (key: guiDemoText) - we need a better process for that:
         $map['ast'] = "Apega testu equí. o revisa toes les pallabres de esti testu pa ver dalgún de los problemis que LanguageTool ye pa deteutar. ¿Afáyeste con los correutores gramaticales? Has date cuenta de que entá nun son perfeutos.";

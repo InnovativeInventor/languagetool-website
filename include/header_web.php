@@ -1,5 +1,5 @@
 <?php
-
+// Modified by InnovativeInventor to create a web app
   function current_url(){
     $s = &$_SERVER;
     $ssl = (!empty($s['HTTPS']) && $s['HTTPS'] == 'on') ? true:false;
