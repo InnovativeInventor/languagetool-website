@@ -116,7 +116,7 @@
 <script type="text/javascript" src="/js/jquery-1.7.0.min.js"></script>
 <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
 <script type='text/javascript' src='/js/touchHover.js'></script>
-	
+
 <!-- used only for development:
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.5.0/less.min.js"></script>
 -->
@@ -339,7 +339,7 @@
        languagetool_i18n_ignore_success :
        {
            // after ignoring spelling errors:
-           // "Word will be ignored in this session - <a href='https://languagetoolplus.com'>Visit languagetoolplus.com</a> to store ignore words" 
+           // "Word will be ignored in this session - <a href='https://languagetoolplus.com'>Visit languagetoolplus.com</a> to store ignore words"
            'de-DE': "Wort wird in dieser Sitzung ignoriert. Tipp: unter <a href='https://languagetoolplus.com'>languagetoolplus.com</a> können Sie Wörter dauerhaft ignorieren",
            'de-DE-x-simple-language': 'xxx'
        },
@@ -418,10 +418,8 @@
           },
 
        languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
-       /* the URL of your LanguageTool server or the URL of your proxy file: */
-       //languagetool_rpc_url                 : "https://languagetool.org/api/v2/check",  // requires the server to be started with '--allow-origin ...'
+       /* the URL of your LanguageTool server is in www/api.php: */
        languagetool_rpc_url                 : "https://api3.languagetool.org/v2/check",  // requires the server to be started with '--allow-origin ...'
-       //languagetool_rpc_url                 : "http://localhost:8081/v2/check",
        /* edit this file to customize how LanguageTool shows errors: */
        languagetool_css_url                 : "<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/css/content.css?v5",
        /* this stuff is a matter of preference: */
@@ -525,7 +523,7 @@
     <script type="text/javascript">
         function fillSubLanguageSelect(langCode) {
             //console.log("fillSubLanguageSelect " + langCode);
-            var unmaintainedLanguages = {   // see https://languagetool.org/languages/ 
+            var unmaintainedLanguages = {   // see https://languagetool.org/languages/
                 "be": "Belarusian",
                 "da": "Danish",
                 // "gl": "Galician",
@@ -538,19 +536,19 @@
                 "sv": "Swedish",
                 "zh": "Chinese"
             };
-            var halfMaintainedLanguages = { 
+            var halfMaintainedLanguages = {
             };
             if (unmaintainedLanguages[langCode]) {
-                $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + unmaintainedLanguages[langCode] + " has " + 
+                $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + unmaintainedLanguages[langCode] + " has " +
                     "very incomplete support in LanguageTool and " +
                     "there is nobody taking care of it. " +
                     "<a href='/contribute/'>Would you like to help?</a></div>");
             } else if (halfMaintainedLanguages[langCode]) {
-                $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + halfMaintainedLanguages[langCode] + " has " + 
+                $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + halfMaintainedLanguages[langCode] + " has " +
                     "incomplete support in LanguageTool. " +
                     "<a href='/contribute/'>Would you like to help?</a></div>");
             //if (langCode === 'gl') {
-            //    $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + "O Galego ten " + 
+            //    $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + "O Galego ten " +
             //        "o suporte incompleto no LanguageTool. " +
             //        "<a href='/contribute/'>Está interessado em ajudar-nos?</a></div>");
             //} else if (langCode === 'de') {
@@ -559,8 +557,8 @@
             } else {
                 $('#maintainedInfo').html("");
             }
-            
-            var languagesWithOwnPage = {   // see https://languagetool.org/languages/ 
+
+            var languagesWithOwnPage = {   // see https://languagetool.org/languages/
                 "br": "Ur bajenn vrezhonek hon eus ivez",
                 "eo": "Ni ankaŭ havas hejmpaĝon en Esperanto",
                 "fr": "Nous avons aussi une page en français",
@@ -581,14 +579,14 @@
             } else {
                 $('#languageInfo').html("");
             }
-            
+
             // 'auto' doesn't work in MSIE, so we switch manually:
             if (langCode === 'fa') {
                 tinymce.get('checktext').getBody().dir = "rtl";
             } else {
                 tinymce.get('checktext').getBody().dir = "ltr";
             }
-            
+
             var subLang = $('#subLang');
             subLang.find('option').remove();
             // For languages that have variants, offer those in a different select:
