@@ -41,6 +41,11 @@
     turnOnFullScreenView();
     });
     </script>
+    <style>
+    body #stage .inner #editor .inner #checktext {
+    height: calc(100vh - 150px) !important;
+    }
+    </style>
   </head>
   <body>
     <?php include("../include/partials/stage_head_web.php"); ?>
