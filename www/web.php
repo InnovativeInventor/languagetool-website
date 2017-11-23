@@ -35,17 +35,6 @@
     <meta name="apple-mobile-web-app-title" content="LanguageTool">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <script>
-    window.addEventListener("load", function(event) {
-    console.log("Loading iOS view . . .");
-    turnOnFullScreenView();
-    });
-    </script>
-    <style>
-    body #stage .inner #editor .inner #checktext {
-    height: calc(100vh - 150px) !important;
-    }
-    </style>
   </head>
   <body>
     <?php include("../include/partials/stage_head_web.php"); ?>
